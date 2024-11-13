@@ -1,0 +1,10 @@
+
+cd bundle/programs/server/
+npm install --unsafe-perm
+cd ../../
+
+export PORT=3000
+export ROOT_URL=http://localhost
+export MONGO_URL=mongodb://127.0.0.1:27017/cotizador
+export FS_DIR=/shareFolder/FileSystem/
+forever start main.js
